@@ -1,0 +1,670 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Bruch &#8212; TDD_Bruch 1.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="TDD_Bruch 1.0.0 documentation" href="index.html" />
+    <link rel="prev" title="Welcome to TDD_Bruch’s documentation!" href="index.html" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+  </head>
+  <body role="document">
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to TDD_Bruch’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">TDD_Bruch 1.0.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-bruch.bruch">
+<span id="bruch"></span><h1>Bruch<a class="headerlink" href="#module-bruch.bruch" title="Permalink to this headline">¶</a></h1>
+<p>Created for SEW
+A02 - TDD with Python</p>
+<p>&#64;author: Borsos Robert
+&#64;date: 23.10.2016
+&#64;version: 1.0.0</p>
+<dl class="class">
+<dt id="bruch.bruch.Bruch">
+<em class="property">class </em><code class="descclassname">bruch.bruch.</code><code class="descname">Bruch</code><span class="sig-paren">(</span><em>zaehler=0</em>, <em>nenner=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bruch Class</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>nenner</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) &#8211; denominator</li>
+<li><strong>zaehler</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) &#8211; numerator</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Variables:</th><td class="field-body"><ul class="first last simple">
+<li><strong>nenner</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) &#8211; denominator</li>
+<li><strong>zaehler</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) &#8211; numerator</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__abs__">
+<code class="descname">__abs__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__abs__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__abs__" title="Permalink to this definition">¶</a></dt>
+<dd><p>abs(Bruch)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">positive Bruch</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__add__">
+<code class="descname">__add__</code><span class="sig-paren">(</span><em>zaehler</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__add__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__add__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add Method</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><strong>TypeError</strong> &#8211; incompatible types</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><strong>zaehler</strong> &#8211; int or Bruch</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Bruch</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__complex__">
+<code class="descname">__complex__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__complex__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__complex__" title="Permalink to this definition">¶</a></dt>
+<dd><p>overrides comPlex() MEthod
+Complex Math i, j</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">complex</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__div__">
+<code class="descname">__div__</code><span class="sig-paren">(</span><em>any</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__div__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__div__" title="Permalink to this definition">¶</a></dt>
+<dd><p>division method
+made for python compatibility with 2.x</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>any</strong> &#8211; int or Bruch</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Bruch</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__eq__">
+<code class="descname">__eq__</code><span class="sig-paren">(</span><em>any</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__eq__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__eq__" title="Permalink to this definition">¶</a></dt>
+<dd><p>equal to</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>any</strong> (<a class="reference internal" href="#bruch.bruch.Bruch" title="bruch.bruch.Bruch"><em>Bruch</em></a>) &#8211; any Bruch</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__float__">
+<code class="descname">__float__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__float__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__float__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overrides float() Method
+zaehler/nenner</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">float</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__ge__">
+<code class="descname">__ge__</code><span class="sig-paren">(</span><em>any</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__ge__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__ge__" title="Permalink to this definition">¶</a></dt>
+<dd><p>greather or equal to</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>any</strong> (<a class="reference internal" href="#bruch.bruch.Bruch" title="bruch.bruch.Bruch"><em>Bruch</em></a>) &#8211; any Bruch</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__gt__">
+<code class="descname">__gt__</code><span class="sig-paren">(</span><em>any</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__gt__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__gt__" title="Permalink to this definition">¶</a></dt>
+<dd><p>greather than</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>any</strong> (<a class="reference internal" href="#bruch.bruch.Bruch" title="bruch.bruch.Bruch"><em>Bruch</em></a>) &#8211; any Bruch</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__iadd__">
+<code class="descname">__iadd__</code><span class="sig-paren">(</span><em>any</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__iadd__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__iadd__" title="Permalink to this definition">¶</a></dt>
+<dd><p>intern add</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>any</strong> (<a class="reference internal" href="#bruch.bruch.Bruch" title="bruch.bruch.Bruch"><em>Bruch</em></a>) &#8211; Bruch</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">self</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__idiv__">
+<code class="descname">__idiv__</code><span class="sig-paren">(</span><em>any</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__idiv__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__idiv__" title="Permalink to this definition">¶</a></dt>
+<dd><p>intern division
+made for python compatibility with 2.x</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>any</strong> (<a class="reference internal" href="#bruch.bruch.Bruch" title="bruch.bruch.Bruch"><em>Bruch</em></a>) &#8211; any Bruch</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">self</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__imul__">
+<code class="descname">__imul__</code><span class="sig-paren">(</span><em>any</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__imul__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__imul__" title="Permalink to this definition">¶</a></dt>
+<dd><p>intern mul</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>any</strong> (<a class="reference internal" href="#bruch.bruch.Bruch" title="bruch.bruch.Bruch"><em>Bruch</em></a>) &#8211; any Bruch</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">self</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>zaehler=0</em>, <em>nenner=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>constructor for Bruch Class with zaehler=0 und nenner=1</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><strong>TypeError</strong> &#8211; Incompatible types if zaehler or nenner is not int</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>zaehler</strong> &#8211; Bruch or int</li>
+<li><strong>nenner</strong> &#8211; int - not zero</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__int__">
+<code class="descname">__int__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__int__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__int__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overrides int() Method
+zaehler/nenner</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__invert__">
+<code class="descname">__invert__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__invert__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__invert__" title="Permalink to this definition">¶</a></dt>
+<dd><p>invert a Bruch</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Bruch</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__isub__">
+<code class="descname">__isub__</code><span class="sig-paren">(</span><em>any</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__isub__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__isub__" title="Permalink to this definition">¶</a></dt>
+<dd><p>intern sub</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>any</strong> (<a class="reference internal" href="#bruch.bruch.Bruch" title="bruch.bruch.Bruch"><em>Bruch</em></a>) &#8211; Bruch</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">self</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__iter__">
+<code class="descname">__iter__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__iter__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__iter__" title="Permalink to this definition">¶</a></dt>
+<dd><p>make class iterable</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__itruediv__">
+<code class="descname">__itruediv__</code><span class="sig-paren">(</span><em>any</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__itruediv__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__itruediv__" title="Permalink to this definition">¶</a></dt>
+<dd><p>intern division
+made for python compatibility with 3.x</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>any</strong> (<a class="reference internal" href="#bruch.bruch.Bruch" title="bruch.bruch.Bruch"><em>Bruch</em></a>) &#8211; any Bruch</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">self</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__le__">
+<code class="descname">__le__</code><span class="sig-paren">(</span><em>any</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__le__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__le__" title="Permalink to this definition">¶</a></dt>
+<dd><p>lower or equal to</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>any</strong> (<a class="reference internal" href="#bruch.bruch.Bruch" title="bruch.bruch.Bruch"><em>Bruch</em></a>) &#8211; any Bruch</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__lt__">
+<code class="descname">__lt__</code><span class="sig-paren">(</span><em>any</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__lt__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__lt__" title="Permalink to this definition">¶</a></dt>
+<dd><p>lower than</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>any</strong> (<a class="reference internal" href="#bruch.bruch.Bruch" title="bruch.bruch.Bruch"><em>Bruch</em></a>) &#8211; any Bruch</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__mul__">
+<code class="descname">__mul__</code><span class="sig-paren">(</span><em>zaehler</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__mul__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__mul__" title="Permalink to this definition">¶</a></dt>
+<dd><p>mul Method for multiply</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><strong>TypeError</strong> &#8211; incompatible types</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><strong>zaehler</strong> &#8211; int or Bruch</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Bruch</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__ne__">
+<code class="descname">__ne__</code><span class="sig-paren">(</span><em>any</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__ne__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__ne__" title="Permalink to this definition">¶</a></dt>
+<dd><p>not equal to</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>any</strong> (<a class="reference internal" href="#bruch.bruch.Bruch" title="bruch.bruch.Bruch"><em>Bruch</em></a>) &#8211; any Bruch</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__neg__">
+<code class="descname">__neg__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__neg__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__neg__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Negation Method
+calls Bruch with negated zaehler</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Bruch</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__pow__">
+<code class="descname">__pow__</code><span class="sig-paren">(</span><em>p</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__pow__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__pow__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bruch power for &#8220;quadrieren&#8221;</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><strong>TypeError</strong> &#8211; incompatible types</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><strong>p</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) &#8211; power</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Bruch</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__radd__">
+<code class="descname">__radd__</code><span class="sig-paren">(</span><em>zaehler</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__radd__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__radd__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Right one of add Method</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><strong>TypeError</strong> &#8211; incompatible types</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><strong>zaehler</strong> &#8211; int or Bruch</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Bruch</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__rdiv__">
+<code class="descname">__rdiv__</code><span class="sig-paren">(</span><em>any</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__rdiv__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__rdiv__" title="Permalink to this definition">¶</a></dt>
+<dd><p>right one of division method
+made for python compatibility with 2.x</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>zaehler</strong> &#8211; int or Bruch</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Bruch</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__repr__">
+<code class="descname">__repr__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__repr__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__repr__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Representation of the Bruch Object Method
+before output  result gets shortened</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">string representation</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__rmul__">
+<code class="descname">__rmul__</code><span class="sig-paren">(</span><em>zaehler</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__rmul__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__rmul__" title="Permalink to this definition">¶</a></dt>
+<dd><p>right one of mul Method for multiply</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><strong>TypeError</strong> &#8211; incompatible types</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><strong>zaehler</strong> &#8211; int or Bruch</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Bruch</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__rsub__">
+<code class="descname">__rsub__</code><span class="sig-paren">(</span><em>left</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__rsub__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__rsub__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Right one of sub MEthod</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><strong>TypeError</strong> &#8211; incompatible types</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><strong>zaehler</strong> &#8211; int or Bruch</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Bruch</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__rtruediv__">
+<code class="descname">__rtruediv__</code><span class="sig-paren">(</span><em>left</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__rtruediv__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__rtruediv__" title="Permalink to this definition">¶</a></dt>
+<dd><p>right one of division method
+made for python compatibility with 3.x</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><strong>TypeError</strong> &#8211; incompatible types</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><strong>zaehler</strong> &#8211; int or Bruch</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Bruch</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__sub__">
+<code class="descname">__sub__</code><span class="sig-paren">(</span><em>zaehler</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__sub__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__sub__" title="Permalink to this definition">¶</a></dt>
+<dd><p>sub Method for substraction</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><strong>TypeError</strong> &#8211; incompatible types</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><strong>zaehler</strong> &#8211; int or Bruch</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Bruch</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.bruch.Bruch.__truediv__">
+<code class="descname">__truediv__</code><span class="sig-paren">(</span><em>zaehler</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.__truediv__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.__truediv__" title="Permalink to this definition">¶</a></dt>
+<dd><p>division method
+made for python compatibility with 3.x</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><strong>TypeError</strong> &#8211; incompatible types</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><strong>zaehler</strong> &#8211; Bruch or int</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Bruch</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="bruch.bruch.Bruch.__weakref__">
+<code class="descname">__weakref__</code><a class="headerlink" href="#bruch.bruch.Bruch.__weakref__" title="Permalink to this definition">¶</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="bruch.bruch.Bruch.gcd">
+<em class="property">classmethod </em><code class="descname">gcd</code><span class="sig-paren">(</span><em>x</em>, <em>y</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/bruch.html#Bruch.gcd"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.bruch.Bruch.gcd" title="Permalink to this definition">¶</a></dt>
+<dd><p>euclid&#8217;s algorithmus
+Am anfang mit abs() zu positiven Werten machen (&#8220;Betrag&#8221; berechnen)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>x</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) &#8211; value 1</li>
+<li><strong>y</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) &#8211; value 2</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">greatest common divisor</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to TDD_Bruch&#8217;s documentation!</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to TDD_Bruch’s documentation!"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">TDD_Bruch 1.0.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, Borsos Robert.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>
